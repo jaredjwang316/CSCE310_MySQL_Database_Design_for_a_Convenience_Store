@@ -1,0 +1,145 @@
+INSERT INTO SUPPLIER (SupplierID, SupplierName, SupplierAddress, SupplierPhone)
+VALUES 
+(1, 'ABC Supplier', '123 Supplier St, City, Country', '123-456-7890'),
+(2, 'XYZ Supplier', '456 Supplier Ave, City, Country', '987-654-3210'),
+(3, 'EFG Supplier', '789 Supplier Blvd, City, Country', '111-222-3333'),
+(4, 'LMN Supplier', '321 Supplier Rd, City, Country', '444-555-6666'),
+(5, 'PQR Supplier', '654 Supplier Ln, City, Country', '777-888-9999'),
+(6, 'STU Supplier', '987 Supplier Way, City, Country', '000-111-2222'),
+(7, 'VWX Supplier', '234 Supplier Ct, City, Country', '333-444-5555'),
+(8, 'YZ Supplier', '876 Supplier Loop, City, Country', '666-777-8888'),
+(9, 'RST Supplier', '543 Supplier Trail, City, Country', '999-000-1111'),
+(10, 'OPQ Supplier', '210 Supplier Avenue, City, Country', '222-333-4444'),
+(11, 'JKL Supplier', '789 Supplier Drive, City, Country', '555-666-7777'),
+(12, 'GHI Supplier', '321 Supplier Parkway, City, Country', '888-999-0000'),
+(13, 'DEF Supplier', '654 Supplier Highway, City, Country', '111-222-3333'),
+(14, 'ABC Supplier 2', '123 Supplier St, City, Country', '123-456-7890'),
+(15, 'XYZ Supplier 2', '456 Supplier Ave, City, Country', '987-654-3210'),
+(16, 'EFG Supplier 2', '789 Supplier Blvd, City, Country', '111-222-3333'),
+(17, 'LMN Supplier 2', '321 Supplier Rd, City, Country', '444-555-6666'),
+(18, 'PQR Supplier 2', '654 Supplier Ln, City, Country', '777-888-9999'),
+(19, 'STU Supplier 2', '987 Supplier Way, City, Country', '000-111-2222'),
+(20, 'VWX Supplier 2', '234 Supplier Ct, City, Country', '333-444-5555');
+
+-- Inserting data into PRODUCT table
+INSERT INTO PRODUCT (ProductID, SupplierID, ProductName, RetailPrice)
+VALUES 
+(1, 1, 'Product A', 10.99),
+(2, 1, 'Product B', 15.50),
+(3, 2, 'Product C', 25.99),
+(4, 3, 'Product D', 8.75),
+(5, 4, 'Product E', 12.50),
+(6, 5, 'Product F', 18.49),
+(7, 6, 'Product G', 9.99),
+(8, 7, 'Product H', 14.95),
+(9, 8, 'Product I', 21.25),
+(10, 9, 'Product J', 6.99),
+(11, 10, 'Product K', 11.50),
+(12, 11, 'Product L', 16.75),
+(13, 12, 'Product M', 22.99),
+(14, 13, 'Product N', 10.25),
+(15, 14, 'Product O', 17.50),
+(16, 15, 'Product P', 13.99),
+(17, 16, 'Product Q', 19.75),
+(18, 17, 'Product R', 24.99),
+(19, 18, 'Product S', 11.25),
+(20, 19, 'Product T', 15.50);
+
+-- Inserting data into CUSTOMER table
+INSERT INTO CUSTOMER (CustomerID, CustomerName, CustomerAddress, CustomerPhone)
+VALUES 
+(1, 'John Doe', '123 Main St, City, Country', '555-123-4567'),
+(2, 'Jane Smith', '456 Oak St, City, Country', '555-987-6543'),
+(3, 'Alice Johnson', '789 Elm St, City, Country', '555-111-2222'),
+(4, 'Bob Williams', '987 Pine St, City, Country', '555-222-3333'),
+(5, 'Emily Brown', '654 Oak St, City, Country', '555-333-4444'),
+(6, 'Michael Davis', '321 Maple St, City, Country', '555-444-5555'),
+(7, 'Sarah Miller', '456 Cedar St, City, Country', '555-555-6666'),
+(8, 'David Wilson', '876 Birch St, City, Country', '555-666-7777'),
+(9, 'Laura Martinez', '543 Walnut St, City, Country', '555-777-8888'),
+(10, 'Daniel Anderson', '210 Pineapple St, City, Country', '555-888-9999'),
+(11, 'Olivia Taylor', '789 Cherry St, City, Country', '555-999-0000'),
+(12, 'James Lee', '987 Peach St, City, Country', '555-000-1111'),
+(13, 'Sophia Rodriguez', '123 Plum St, City, Country', '555-111-2222'),
+(14, 'William Garcia', '456 Apple St, City, Country', '555-222-3333'),
+(15, 'Ava Martinez', '654 Banana St, City, Country', '555-333-4444'),
+(16, 'Isabella Lopez', '321 Orange St, City, Country', '555-444-5555'),
+(17, 'Benjamin Hernandez', '456 Grape St, City, Country', '555-555-6666'),
+(18, 'Mia Martinez', '987 Lemon St, City, Country', '555-666-7777'),
+(19, 'Ethan Diaz', '543 Mango St, City, Country', '555-777-8888'),
+(20, 'Charlotte Perez', '210 Watermelon St, City, Country', '555-888-9999');
+
+-- Inserting data into CUST_ORDER table
+INSERT INTO CUST_ORDER (OrderID, CustomerID, OrderDate)
+VALUES 
+(1, 1, '2024-03-01'),
+(2, 2, '2024-03-05'),
+(3, 3, '2024-03-10'),
+(4, 4, '2024-03-15'),
+(5, 5, '2024-03-20'),
+(6, 6, '2024-03-25'),
+(7, 7, '2024-03-30'),
+(8, 8, '2024-04-01'),
+(9, 9, '2024-04-05'),
+(10, 10, '2024-04-10'),
+(11, 11, '2024-04-15'),
+(12, 12, '2024-04-20'),
+(13, 13, '2024-04-25'),
+(14, 14, '2024-05-01'),
+(15, 15, '2024-05-05'),
+(16, 16, '2024-05-10'),
+(17, 17, '2024-05-15'),
+(18, 18, '2024-05-20'),
+(19, 19, '2024-05-25'),
+(20, 20, '2024-05-30');
+
+-- Inserting data into ORDER_DETAIL table
+INSERT INTO ORDER_DETAIL (OrderID, ProductID, Quantity)
+VALUES 
+(1, 1, 2),
+(1, 2, 1),
+(3, 3, 3),
+(3, 4, 1),
+(4, 5, 2),
+(4, 6, 1),
+(5, 7, 1),
+(5, 8, 2),
+(6, 9, 3),
+(6, 10, 1),
+(7, 11, 2),
+(7, 12, 1),
+(8, 13, 3),
+(8, 14, 1),
+(9, 15, 2),
+(9, 16, 1),
+(10, 17, 1),
+(10, 18, 2),
+(11, 19, 3),
+(11, 20, 1),
+(12, 1, 2),
+(12, 2, 1);
+
+
+-- Inserting data into PAYMENT table
+INSERT INTO PAYMENT (PayID, CardNumber, CardHolder, ExpiryDate, CVV, Amount)
+VALUES 
+(1, '1234567890123456', 'John Doe', '2024-04-30', '123', 36.50),
+(2, '9876543210987654', 'Jane Smith', '2024-05-31', '456', 20.99),
+(3, '1111222233334444', 'Alice Johnson', '2024-06-30', '234', 68.25),
+(4, '4444333322221111', 'Bob Williams', '2024-07-31', '567', 29.99),
+(5, '7777666655554444', 'Emily Brown', '2024-08-31', '890', 41.98),
+(6, '0000111122223333', 'Michael Davis', '2024-09-30', '123', 18.49),
+(7, '3333444455556666', 'Sarah Miller', '2024-10-31', '456', 24.95),
+(8, '6666777788889999', 'David Wilson', '2024-11-30', '789', 42.50),
+(9, '9999000011112222', 'Laura Martinez', '2024-12-31', '012', 32.99),
+(10, '2222333344445555', 'Daniel Anderson', '2025-01-31', '345', 16.75),
+(11, '5555666677778888', 'Olivia Taylor', '2025-02-28', '678', 18.50),
+(12, '8888999900001111', 'James Lee', '2025-03-31', '901', 52.49),
+(13, '1234123412341234', 'Sophia Rodriguez', '2025-04-30', '234', 23.75),
+(14, '4567456745674567', 'William Garcia', '2025-05-31', '567', 31.25),
+(15, '7890789078907890', 'Ava Martinez', '2025-06-30', '890', 27.99),
+(16, '0123012301230123', 'Isabella Lopez', '2025-07-31', '123', 36.75),
+(17, '3456345634563456', 'Benjamin Hernandez', '2025-08-31', '456', 15.50),
+(18, '6789678967896789', 'Mia Martinez', '2025-09-30', '789', 48.99),
+(19, '9012901290129012', 'Ethan Diaz', '2025-10-31', '012', 19.25),
+(20, '2345234523452345', 'Charlotte Perez', '2025-11-30', '345', 22.50);
